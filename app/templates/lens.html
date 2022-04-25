@@ -1,0 +1,94 @@
+<!-- extend base layout -->
+{% extends "index_base.html" %}
+
+{% block head_css %}
+        {{ super() }}
+        <link href="{{url_for('static',filename='css/custom.css')}}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h1>鏡頭</h1>
+
+    </div>
+</div>
+
+<div class="container" align="left">
+  <a href="https://www.dcfever.com/lens/lens_type.php?type=3"><h3>遠攝鏡 </h3></a>
+</div>
+
+<table border="0" align="center" width="70%" height="80%">
+<tr>
+  <td align="center"><a href="https://www.dcfever.com/lens/specification.php?id=870"><img src="https://cdn09.dcfever.com/media/lens/images/2014/sigma_870_1410516806_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/lens/specification.php?id=940"><img src="https://cdn09.dcfever.com/media/lens/images/2015/nikon_940_1438679452_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/lens/specification.php?id=1059"><img src="https://cdn09.dcfever.com/media/lens/images/2017/panasonic_1059_1483598324_m.jpg"></a></td>
+
+</tr>
+<tr>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/lens/specification.php?id=870">Sigma 150-600mm f/5-6.3 DG OS HSM | C</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/lens/specification.php?id=940">Nikon AF-S NIKKOR 200-500mm F5.6E ED VR</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/lens/specification.php?id=1059">Panasonic Lumix G X Vario 35-100mm f/...</a></td>
+
+</tr>
+</table>
+
+<br><br><br><br>
+
+<div class="container" align="left">
+  <a href="https://www.dcfever.com/lens/lens_type.php?type=2"><h3>廣角鏡 </h3></a>
+</div>
+
+<table border="0" align="center" width="70%" height="80%">
+<tr>
+  <td align="center"><a href="https://www.dcfever.com/lens/specification.php?id=795"><img src="https://cdn09.dcfever.com/media/lens/images/2013/fujifilm_795_1387380095_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/lens/specification.php?id=1082"><img src="https://cdn09.dcfever.com/media/lens/images/2017/sony_1082_1495078514_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/lens/specification.php?id=1178"><img src="https://cdn09.dcfever.com/media/lens/images/2019/nikon_1178_1546913735_m.jpg"></a></td>
+</tr>
+<tr>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/lens/specification.php?id=795">FUJINON XF 10-24mm F4 R OIS</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/lens/specification.php?id=1082">Sony FE 16-35mm F2.8 GM</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/lens/specification.php?id=1178">Nikon NIKKOR Z 14-30mm F4 S</a></td>
+
+</tr>
+</table>
+
+<br><br><br><br>
+
+<div class="container" align="left">
+  <a href="https://www.dcfever.com/lens/lens_type.php?type=5"><h3>定焦鏡 </h3></a>
+</div>
+
+<table border="0" align="center" width="70%" height="80%">
+<tr>
+  <td align="center"><a href="https://www.dcfever.com/lens/specification.php?id=683"><img src="https://cdn09.dcfever.com/media/lens/images/2012/fujifilm_683_1331031115_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/lens/specification.php?id=784"><img src="https://cdn09.dcfever.com/media/lens/images/2013/sony_784_1381937824_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/lens/specification.php?id=973"><img src="https://cdn09.dcfever.com/media/lens/images/2015/fujifilm_973_1445483424_m.jpg"></a></td>
+
+</tr>
+<tr>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/lens/specification.php?id=683">FUJINON XF 35mm F1.4 R
+</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/lens/specification.php?id=784">Zeiss Sonnar T* FE 55mm F1.8 ZA</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/lens/specification.php?id=973">FUJINON XF 35mm F2 R WR
+</a></td>
+  
+</table>
+
+<div class="container" align="left">
+  <a href="https://www.dcfever.com/lens/lens_type.php?type=1"><h3>變焦鏡  </h3></a>
+</div>
+<table border="0" align="center" width="70%" height="80%">
+<tr>
+  <td align="center"><a href="https://www.dcfever.com/lens/specification.php?id=705"><img src="https://cdn09.dcfever.com/media/lens/images/2012/fujifilm_705_1346990529_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/lens/specification.php?id=1112"><img src="https://cdn09.dcfever.com/media/lens/images/2017/sony_1112_1508949307_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/lens/specification.php?id=1286"><img src="https://cdn09.dcfever.com/media/lens/images/2020/tamron_1286_1591954376_m.jpg"></a></td>
+</tr>
+<tr>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/lens/specification.php?id=705">FUJINON XF 18-55mm F2.8-4 R LM OIS</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/lens/specification.php?id=1112">Sony FE 24-105mm F4 G OSS</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/lens/specification.php?id=1286">Tamron 28-200mm F2.8-5.6 Di III RXD</a></td>
+</tr>
+</table>
+
+{% endblock %}

@@ -1,0 +1,91 @@
+<!-- extend base layout -->
+{% extends "index_base.html" %}
+
+{% block head_css %}
+        {{ super() }}
+        <link href="{{url_for('static',filename='css/custom.css')}}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h1>汽車</h1>
+
+    </div>
+</div>
+
+<div class="container" align="left">
+  <a href="https://www.dcfever.com/cars/car_type.php?type=%E6%88%BF%E8%BB%8A%20Sedan"><h3>熱門房車</h3></a>
+</div>
+
+<table border="0" align="center" width="70%" height="80%">
+<tr>
+  <td align="center"><a href="https://www.dcfever.com/cars/specification.php?id=96"><img src="https://cdn09.dcfever.com/media/cars/images//2016/11/mercedesbenz_96_1478768755_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/cars/specification.php?id=931"><img src="https://cdn09.dcfever.com/media/cars/images//2019/07/tesla_931_1563935801_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/cars/specification.php?id=160"><img src="https://cdn09.dcfever.com/media/cars/images//2018/06/mercedesbenz_160_1528092802_m.jpg"></a></td>
+</tr>
+<tr>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cars/specification.php?id=96">Mercedes-Benz C200</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cars/specification.php?id=931">Tesla Model 3 Performance</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cars/specification.php?id=160">Mercedes-Benz E20</a></td>
+</tr>
+</table>
+
+<br><br><br><br>
+
+<div class="container" align="left">
+  <a href="https://www.dcfever.com/cars/car_type.php?type=%E8%B6%8A%E9%87%8E%E8%BB%8A%20SUV"><h3> SUV </h3></a>
+</div>
+
+<table border="0" align="center" width="70%" height="80%">
+<tr>
+  <td align="center"><a href="https://www.dcfever.com/cars/specification.php?id=795"><img src="https://cdn09.dcfever.com/media/cars/images//2018/07/suzuki_795_1531886170_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/cars/specification.php?id=760"><img src="https://cdn09.dcfever.com/media/cars/images//2019/03/lamborghini_760_1552746621_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/cars/specification.php?id=1086"><img src="https://cdn09.dcfever.com/media/cars/images//2021/07/tesla_1086_1625215771_m.jpg"></a></td>
+</tr>
+<tr>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cars/specification.php?id=795">Suzuki Jimny</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cars/specification.php?id=760">Lamborghini Urus</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cars/specification.php?id=1086">Tesla Model Y Long Range</a></td>
+</tr>
+</table>
+
+<br><br><br><br>
+
+<div class="container" align="left">
+  <a href="https://www.dcfever.com/cars/car_type.php?type=%E5%A4%9A%E7%94%A8%E9%80%94%E8%BB%8A%20MPV"><h3>MPV /h3></a>
+</div>
+
+<table border="0" align="center" width="70%" height="80%">
+<tr>
+  <td align="center"><a href="https://www.dcfever.com/cars/specification.php?id=345"><img src="https://cdn09.dcfever.com/media/cars/images//2016/12/honda_345_1480658693.png"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/cars/specification.php?id=352"><img src="https://cdn09.dcfever.com/media/cars/images//2017/12/honda_352_1513312110_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/cars/specification.php?id=1127"><img src="https://cdn09.dcfever.com/media/cars/images//2022/02/toyota_1127_1645777864_m.jpg"></a></td>
+</tr>
+<tr>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cars/specification.php?id=345">Honda Freed</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cars/specification.php?id=352">Honda Stepwgn SPADA</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cars/specification.php?id=1127">Toyota Noah Luxury 2022</a></td>
+</tr>
+</table>
+
+
+<div class="container" align="left">
+  <a href="https://www.dcfever.com/cars/car_type.php?type=%E6%8E%80%E8%83%8C%E8%BB%8A%20Hatchback"><h3>Hatchback</h3></a>
+</div>
+
+<table border="0" align="center" width="70%" height="80%">
+<tr>
+  <td align="center"><a href="https://www.dcfever.com/cars/specification.php?id=719"><img src="https://cdn09.dcfever.com/media/cars/images//2019/06/honda_719_1560484640_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/cars/specification.php?id=337"><img src="https://cdn09.dcfever.com/media/cars/images//2016/12/toyota_337_1481088194_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/cars/specification.php?id=990"><img src="https://cdn09.dcfever.com/media/cars/images//2020/07/suzuki_990_1593672671_m.jpg"></a></td>
+  
+</tr>
+<tr>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cars/specification.php?id=719">Honda Civic Type R （FK8）</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cars/specification.php?id=337">Toyota Spade</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cars/specification.php?id=990">Suzuki Hustler 660 Turbo 2020</a></td>
+</tr>
+</table>
+
+{% endblock %}

@@ -1,0 +1,55 @@
+<!-- extend base layout -->
+{% extends "index_base.html" %}
+
+{% block head_css %}
+        {{ super() }}
+        <link href="{{url_for('static',filename='css/custom.css')}}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h1>手機</h1>
+
+    </div>
+</div>
+<div class="container" align="left">
+  <a href="https://www.dcfever.com/phones/phone_type.php?type=1"><h3>Android 手機 </h3></a>
+</div>
+
+<table border="0" align="center" width="70%" height="80%">
+<tr>
+  <td align="center"><a href="https://www.dcfever.com/phones/specification.php?id=2880"><img src="https://cdn09.dcfever.com/media/phones/images/2021/03/samsung_2880_1615990711_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/phones/specification.php?id=2947"><img src="https://cdn09.dcfever.com/media/phones/images/2022/02/samsung_2947_1644402162_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/phones/specification.php?id=2962"><img src="https://cdn09.dcfever.com/media/phones/images/2022/03/samsung_2962_1648697575_m.jpg"></a></td>
+ 
+</tr>
+<tr>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/phones/specification.php?id=2880">Samsung Galaxy A52 5G</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/phones/specification.php?id=2947">Samsung Galaxy S22 Ultra</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/phones/specification.php?id=2962">Samsung Galaxy A53 5G</a></td>
+
+</tr>
+</table>
+
+<br><br><br><br>
+
+<div class="container" align="left">
+  <a href="https://www.dcfever.com/phones/phone_type.php?type=2"><h3>iOS 手機 </h3></a>
+</div>
+
+<table border="0" align="center" width="70%" height="80%">
+<tr>
+  <td align="center"><a href="https://www.dcfever.com/phones/specification.php?id=2923"><img src="https://cdn09.dcfever.com/media/phones/images/2021/09/apple_2923_1631651902_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/phones/specification.php?id=2922"><img src="https://cdn09.dcfever.com/media/phones/images/2021/09/apple_2922_1631648779_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/phones/specification.php?id=2754"><img src="https://cdn09.dcfever.com/media/phones/images/2019/09/apple_2754_1568146792_m.jpg"></a></td>
+ 
+</tr>
+<tr>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/phones/specification.php?id=2923">iPhone 13 Pro</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/phones/specification.php?id=2922">iPhone 13</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/phones/specification.php?id=2754">Apple iPhone 11</a></td>
+</tr>
+</table>
+
+{% endblock %}

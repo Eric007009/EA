@@ -1,0 +1,36 @@
+<!-- extend base layout -->
+{% extends "index_base.html" %}
+
+{% block head_css %}
+        {{ super() }}
+        <link href="{{url_for('static',filename='css/custom.css')}}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h1>物品</h1>
+
+    </div>
+</div>
+
+<div class="container" align="left">
+  <a href="https://www.dcfever.com/trading/list.php?item=new"><h3>最新物品</h3></a>
+</div>
+
+<table border="0" align="center" width="70%" height="80%">
+<tr>
+  <td align="center"><a href="https://www.dcfever.com/trading/view.php?id=9591770"><img src="https://cdn03.dcfever.com/media/trade/22/4/26/2/1089632_1650911467_1_sqt.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/trading/view.php?id=9591766"><img src="https://cdn03.dcfever.com/media/trade/22/4/26/2/1080666_1650911113_1_sqt.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/trading/view.php?id=9591765"><img src="https://cdn03.dcfever.com/media/trade/22/4/26/2/859226_1650911072_1_sqt.jpg"></a></td>
+
+</tr>
+<tr>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/trading/view.php?id=9591770">h81m asrock 主機板</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/trading/view.php?id=9591766">Sony zx300</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/trading/view.php?id=9591765">Panerai Luminor 000 Pam 000 </a></td>
+ 
+</tr>
+</table>
+
+{% endblock %}

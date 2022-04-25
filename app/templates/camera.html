@@ -1,0 +1,75 @@
+<!-- extend base layout -->
+{% extends "index_base.html" %}
+
+{% block head_css %}
+        {{ super() }}
+        <link href="{{url_for('static',filename='css/custom.css')}}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h1>相機</h1>
+
+    </div>
+</div>
+
+<div class="container" align="left">
+  <a href="https://www.dcfever.com/cameras/camera_type.php?type=prosumer"><h3>半專業機 </h3></a>
+</div>
+
+<table border="0" align="center" width="70%" height="80%">
+<tr>
+  <td align="center"><a href="https://www.dcfever.com/cameras/specification.php?id=2327"><img src="https://cdn09.dcfever.com/media/cameras/images/2019/02/ricoh_2327_1550814895.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/cameras/specification.php?id=2328"><img src="https://cdn09.dcfever.com/media/cameras/images/2019/03/leica_2328_1552013874.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/cameras/specification.php?id=2344"><img src="https://cdn09.dcfever.com/media/cameras/images/2019/07/sony_2344_1564105108.jpg"></a></td>
+  
+</tr>
+<tr>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cameras/specification.php?id=2327">Ricoh GR III</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cameras/specification.php?id=2328">Leica Q2</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cameras/specification.php?id=2344">Sony Cyber-shot DSC-RX100 VII</a></td>
+</tr>
+</table>
+
+<br><br><br><br>
+
+<div class="container" align="left">
+  <a href="https://www.dcfever.com/cameras/camera_type.php?type=dslr"><h3>單反相機 </h3></a>
+</div>
+
+<table border="0" align="center" width="70%" height="80%">
+<tr>
+  <td align="center"><a href="https://www.dcfever.com/cameras/specification.php?id=1708"><img src="https://cdn09.dcfever.com/media/cameras/images/2012/03/canon_1708_1330678766.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/cameras/specification.php?id=1766"><img src="https://cdn09.dcfever.com/media/cameras/images/2012/09/canon_1766_1347950016.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/cameras/specification.php?id=1910"><img src="https://cdn09.dcfever.com/media/cameras/images/2013/07/canon_1910_1372744372.jpg"></a></td>
+  
+</tr>
+<tr>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cameras/specification.php?id=1708">Canon EOS 5D Mark III</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cameras/specification.php?id=1766">Canon EOS 6D</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cameras/specification.php?id=1910">Canon EOS 70D</a></td>
+</tr>
+</table>
+
+<br><br><br><br>
+
+<div class="container" align="left">
+  <a href="https://www.dcfever.com/cameras/camera_type.php?type=mirrorless"><h3>無反相機</h3></a>
+</div>
+
+<table border="0" align="center" width="70%" height="80%">
+<tr>
+  <td align="center"><a href="https://www.dcfever.com/cameras/specification.php?id=2373"><img src="https://cdn09.dcfever.com/media/cameras//images/2020/02/fujifilm_2373_1582699741.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/cameras/specification.php?id=2378"><img src="https://cdn09.dcfever.com/media/cameras/images/2020/07/canon_2378_1594326738.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/cameras/specification.php?id=2380"><img src="https://cdn09.dcfever.com/media/cameras/images/2020/07/nikon_2380_1595345402.jpg"></a></td>
+</tr>
+<tr>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cameras/specification.php?id=2373">Fujifilm X-T4</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cameras/specification.php?id=2378">Canon EOS R6</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/cameras/specification.php?id=2380">Nikon Z5</a></td>
+ 
+</tr>
+</table>
+
+{% endblock %}

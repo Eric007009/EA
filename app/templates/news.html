@@ -1,0 +1,116 @@
+<!-- extend base layout -->
+{% extends "index_base.html" %}
+
+{% block head_css %}
+        {{ super() }}
+        <link href="{{url_for('static',filename='css/custom.css')}}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h1>{{param1}}</h1>
+
+    </div>
+</div>
+
+<div class="container" align="left">
+  <h2>最新消息</h2>
+</div>
+
+<table border="0" width="80%" height="80%" align="center">
+
+<tr>
+  <td rowspan="2" width="20%"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32912_1650888314_icon.jpg" width="90%"></td>
+  <td rowspan="1" width="30%"><a href="https://www.dcfever.com/news/readnews.php?id=32912"><h3>Transcend 新增 1TB「半截」SD，與 MacBook 更貼服<h3></a></td>
+  <td rowspan="3" width="30%" align="center"><img src="https://cdn01.dcfever.com/media/sharing/highlight/2022/04/20220425_1664141_square.jpg" width="60%"></td>
+</tr>
+<tr>
+  <td width="30%"><h8>以往因為 SD 卡外型太大，才衍生出 Micro SD 記憶卡，適合體積細小的相機、運動相機，以至是手機使用。而專門生產記憶體的 Transcend 就推出 JetDr<h8></td>
+</tr>
+
+<tr>
+  <td rowspan="2" width="20%"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32915_1650860775_icon.jpg" width="90%"></td>
+  <td rowspan="1" width="30%"><a href="https://www.dcfever.com/news/readnews.php?id=32915"><h3>【本地車訊】入門家庭車！BMW 2 系列 Active Tourer 抵港開賣<h3></a></td>
+</tr>
+<tr>
+  <td width="30%"><h8>如果預算不高，但又想感受德國車的特別操控，被喻為性價比極高的 BMW 2 系 Active Tourer 運動 SUV 可能是不俗的選擇！<h8></td>
+  <td width="30%" align="center"><h2>精選文章<h2></td>
+</tr>
+
+<tr>
+  <td rowspan="2" width="20%"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32898_1650851337_icon.jpg" width="90%"></td>
+  <td rowspan="1" width="30%"><a href="https://www.dcfever.com/news/readnews.php?id=32898"><h3>復古無反 Nikon zfc 減價高達 $1,150！用消費券再享額外優惠！<h3></a></td>
+  <td rowspan="2" width="30%" align="center"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32714_1650625065_icon.jpg" width="50%"><h5>Nikon 全片幅 Z6II/Z7II 韌體升級與 Z9 韌體 2.0 同步登場<h5></td>
+</tr>
+<tr>
+  <td width="30%"><h8>復古造型相機 Nikon Zfc 自推出以來都十分搶手，作為日常街拍相機或打卡相機都是一流。Nikon 早前推出的免費換皮服務，可為相機自選 6 種顏色蒙皮<h8></td>
+</tr>
+
+<tr>
+  <td rowspan="2" width="20%"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32914_1650856938_icon.jpg" width="90%"></td>
+  <td rowspan="1" width="30%"><a href="https://www.dcfever.com/news/readnews.php?id=32914"><h3>Hyundai 露營版 Statia 超吸引！電動頂篷、充氣床墊太方便<h3></a></td>
+  <td rowspan="2" width="30%" align="center"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32813_1650438686_icon.jpg" width="50%"><h5>【限時優惠】每月 $10 訂閱 Ivacy VPN 超低價購買 Youtube Premium<h5></td>
+</tr>
+<tr>
+  <td width="30%"><h8>早在上年年尾，韓國汽車大牌 Hyundai 就發表了極具科幻外型 MPV Staria，而貨車版在前陣子也於本港開賣！而近日，Hyundai 官方似乎有意將 Staria 車<h8></td>
+</tr>
+
+<tr>
+  <td rowspan="2" width="20%"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32913_1650856036_icon.jpg" width="90%"></td>
+  <td rowspan="1" width="30%"><a href="https://www.dcfever.com/news/readnews.php?id=32913"><h3>兒童側撞防護要改善！大改 Honda「HR-V」仍獲 4 星評價<h3></a></td>
+  <td rowspan="2" width="30%" align="center"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32211_1650424879_icon.jpg" width="50%"><h5>Tamron 18-300mm 輕便高性能 真。一鏡走天涯<h5></td>
+</tr>
+<tr>
+  <td width="30%"><h8>日前，「Euro NCAP」公布了 2022 年最新的新車安全測試結果，重點測試了歐版第四代的 Honda HR-V，並針對其後座進行「側撞」，是一項對兒童安全的測<h8></td>
+</tr>
+
+<tr>
+  <td rowspan="2" width="20%"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32910_1650816382_icon.jpg" width="90%"></td>
+  <td rowspan="1" width="30%"><a href="https://www.dcfever.com/news/readnews.php?id=32910"><h3>Samsung Galaxy M53 登場：一億像素手機性價比直迫小米<h3></a></td>
+  <td rowspan="2" width="30%" align="center"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32895_1650506542_icon.jpg" width="50%"><h5>四款 iPhone 14 手機曝光：全新機款或最受歡迎<h5></td>
+</tr>
+<tr>
+  <td width="30%"><h8>如果說 Samsung Galaxy A 系列好抵玩的話，那麼新公佈的 Galaxy M53 應該是 Samsung 最高性價比的手機，配備一億像素四鏡主相機的它，竟然賣大約 H<h8></td>
+</tr>
+
+<tr>
+  <td rowspan="2" width="20%"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32911_1650840752_icon.jpg" width="90%"></td>
+  <td rowspan="1" width="30%"><a href="https://www.dcfever.com/news/readnews.php?id=32911"><h3>平價超廣角變焦？Canon RF 15-28mm F4-5.6 專利曝光<h3></a></td>
+  <td rowspan="2" width="30%" align="center"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32885_1650383424_icon.jpg" width="50%"><h5>1More Piston Buds Pro 評測：有力問鼎最高性價比耳機迎<h5></td>
+</tr>
+<tr>
+  <td width="30%"><h8>Canon 現時已經有 RF 15-35mm F2.8L IS USM 及 RF 14-35mm F4L IS USM 兩支全片幅超廣角變焦鏡頭，不過兩鏡屬「紅圈」規格，未必很多使用 EOS R 系<h8></td>
+</tr>
+
+<tr>
+  <td rowspan="2" width="20%"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32909_1650813842_icon.jpg" width="90%"></td>
+  <td rowspan="1" width="30%"><a href="https://www.dcfever.com/news/readnews.php?id=32909"><h3>一星期的約會，盛放櫻花與春銀河合照<h3></a></td>
+  <td rowspan="2" width="30%" align="center"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32890_1650494251_icon.jpg" width="50%"><h5>頂級大瞳在望？傳 Canon RF 35mm F1.2L 今年第三季上市<h5></td>
+</tr>
+<tr>
+  <td width="30%"><h8>在日本，新一年的開始，以櫻花盛開打頭陣，同期上場的還有油菜花，稍後才輪到如鬱金香等其他花種。其實春未的夜空也同樣精彩，皆因最絢麗的銀河核心<h8></td>
+</tr>
+
+<tr>
+  <td rowspan="2" width="20%"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32908_1650803413_icon.jpg" width="90%"></td>
+  <td rowspan="1" width="30%"><a href="https://www.dcfever.com/news/readnews.php?id=32908"><h3>男神回到未紅時：時光機全景雕像<h3></a></td>
+  <td rowspan="2" width="30%" align="center"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32903_1650648883_icon.jpg" width="50%"><h5>Leica、Zeiss、Hasselblad 鏡頭手機色彩對決<h5></td>
+</tr>
+<tr>
+  <td width="30%"><h8>在《龍珠》世界裏，比達在悟空面前永達是千年老二，但論下一代，比達卻贏一仗，因為杜拉格斯不但變過超級撒亞人神，人氣仲比悟飯高出甚多，杜拉格斯<h8></td>
+</tr>
+
+<tr>
+  <td rowspan="2" width="20%"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32907_1650759366_icon.jpg" width="90%"></td>
+  <td rowspan="1" width="30%"><a href="https://www.dcfever.com/news/readnews.php?id=32907"><h3>傳 Sigma 明年加推 70-200mm F2.8 DG DN，令平價 F2.8 大三元鏡得以成軍<h3></a></td>
+  <td rowspan="2" width="30%" align="center"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32905_1650673519_icon.jpg" width="50%"><h5>加入手動光圈環！Sony FE 24-70mm F2.8 GM II 諜照流出<h5></td>
+</tr>
+<tr>
+  <td width="30%"><h8>有指 Sigma 會快將公佈 16-28mm F2.8 DG DN|Contemporary 全片幅無反鏡頭，並已經有擬似規格流出，會為 Leica L-mount 及 Sony E-mount 用家提供平<h8></td>
+</tr>
+
+</table>
+
+
+{% endblock %}

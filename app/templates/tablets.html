@@ -1,0 +1,75 @@
+<!-- extend base layout -->
+{% extends "index_base.html" %}
+
+{% block head_css %}
+        {{ super() }}
+        <link href="{{url_for('static',filename='css/custom.css')}}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h1>平版</h1>
+
+    </div>
+</div>
+
+<div class="container" align="left">
+  <a href="https://www.dcfever.com/tablets/tablet_type.php?type=android"><h3>Android 平板電腦</h3></a>
+</div>
+
+<table border="0" align="center" width="70%" height="80%">
+<tr>
+  <td align="center"><a href="https://www.dcfever.com/tablets/specification.php?id=1198"><img src="https://cdn09.dcfever.com/media/tablets/images/2017/07/lenovo_1198_1500998110_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/tablets/specification.php?id=1169"><img src="https://cdn09.dcfever.com/media/tablets/images/2015/05/samsung_1169_1430965917_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/tablets/specification.php?id=1139"><img src="https://cdn09.dcfever.com/media/tablets/images/2014/05/hp_1139_1400154164_m.jpg"></a></td>
+  
+</tr>
+<tr>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/tablets/specification.php?id=1198">Lenovo Tab 4 Plus 8</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/tablets/specification.php?id=1169">Samsung Galaxy Tab A 8.0</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/tablets/specification.php?id=1139">小米平板</a></td>
+</tr>
+</table>
+
+<br><br><br><br>
+
+<div class="container" align="left">
+  <a href="https://www.dcfever.com/tablets/tablet_type.php?type=ios"><h3> iOS 平板電腦</h3></a>
+</div>
+
+<table border="0" align="center" width="70%" height="80%">
+<tr>
+  <td align="center"><a href="https://www.dcfever.com/tablets/specification.php?id=1237"><img src="https://cdn09.dcfever.com/media/tablets/images/2022/03/apple_1237_1646770518_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/tablets/specification.php?id=1229"><img src="https://cdn09.dcfever.com/media/tablets/images/2021/09/apple_1229_1631655159_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/tablets/specification.php?id=1209"><img src="https://cdn09.dcfever.com/media/tablets/images/2019/03/apple_1209_1552921642_m.jpg"></a></td>
+
+<tr>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/tablets/specification.php?id=1237">iPad Air 5</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/tablets/specification.php?id=1229">iPad 9 代</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/tablets/specification.php?id=1209">Apple iPad Air 3</a></td>
+</tr>
+</table>
+
+<br><br><br><br>
+
+<div class="container" align="left">
+  <a href="https://www.dcfever.com/tablets/tablet_type.php?type=windows"><h3>Windows 平板電腦</h3></a>
+</div>
+
+<table border="0" align="center" width="70%" height="80%">
+<tr>
+  <td align="center"><a href="https://www.dcfever.com/tablets/specification.php?id=1238"><img src="https://cdn09.dcfever.com/media/tablets/images/2022/03/microsoft_1238_1648393548_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/tablets/specification.php?id=1144"><img src="https://cdn09.dcfever.com/media/tablets/images/2014/06/_1144_1404025111_m.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/tablets/specification.php?id=1168"><img src="https://cdn09.dcfever.com/media/tablets/images/2015/04/_1168_1427821906_m.jpg"></a></td>
+ 
+</tr>
+<tr>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/tablets/specification.php?id=1238">Microsoft Surface Pro 8</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/tablets/specification.php?id=1144">Microsoft Surface Pro 3</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/tablets/specification.php?id=1168">Microsoft Surface 3</a></td>
+
+</tr>
+</table>
+
+{% endblock %}

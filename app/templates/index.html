@@ -1,0 +1,361 @@
+<!-- extend base layout -->
+{% extends "index_base.html" %}
+
+{% block head_css %}
+        {{ super() }}
+        <link href="{{url_for('static',filename='css/custom.css')}}" rel="stylesheet">
+{% endblock %}
+
+
+
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+       <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+       <li data-target="#carousel-example-generic" data-slide-to="1" ></li>
+       <li data-target="#carousel-example-generic" data-slide-to="2" ></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3" ></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="jumbotron" style="background: url('static/img/slide1.jpg');background-size: 100% 100%;background-repeat: no-repeat;">
+            <div class="container">
+            <h1><i class="fa fa-desktop"></i> Flask App Builder</h1>
+            <p>{{_("Simple and rapid application development framework, built on top of Flask. includes detailed security, auto CRUD generation for your models, google charts and much more.")}}</p>
+            <center>
+            <p><a class="btn btn-primary btn-lg" href="https://github.com/dpgaspar/Flask-AppBuilder"
+                 role="button">{{_("Star it")}} <i class="fa fa-star"></i></a></p>
+            </center>
+            </div>
+           </div>
+        </div>
+
+        <div class="item">
+            <div class="jumbotron" style="background: url('static/img/slide2.jpg');background-size: 100% 100%;background-repeat: no-repeat;">
+            <div class="container">
+            <h1><i class="fa fa-github"></i> {{_("Free and Open Source")}}</h1>
+                <p>{{_("Use it any way you like, it's free to use. Feel free to contribute, post questions, propose new features, report bugs. You can browse the code freely on github.")}}</p>
+            <center>
+                <p><a class="btn btn-primary btn-lg" href="https://github.com/dpgaspar/Flask-AppBuilder/issues" role="button">{{_("Issues")}} &raquo;</a></p>
+            </center>
+            </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="jumbotron" style="background: url('static/img/slide3.jpg');background-size: 100% 100%;background-repeat: no-repeat;">
+            <div class="container">
+            <h1><i class="fa fa-book"></i> {{_("Documentation")}}</h1>
+            <p>{{_("Every feature is documented with examples. API documentation is automatically generated from commented code.")}}</p>
+            <center>
+            <p><a class="btn btn-primary btn-lg" href="http://flask-appbuilder.readthedocs.org/en/latest/" role="button">{{_("Documentation")}} &raquo;</a></p>
+            </center>
+            </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="jumbotron" style="background: url('static/img/slide4.jpg');background-size: 100% 100%;background-repeat: no-repeat;">
+            <div class="container">
+            <h1><i class="fa fa-play"></i> {{_("Live Demo")}}</h1>
+            <p>{{_("Login and get a hold on the quick how to example, with a simple contacts app. This will show the basic features of the framework. Feel free to login using user 'guest' password 'welcome'")}}</p>
+            <center>
+            <p><a class="btn btn-primary btn-lg"  href="login" role="button">{{_("Login")}} &raquo;</a></p>
+            </center>
+            </div>
+            </div>
+        </div>
+</div>
+
+    <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+
+
+
+{% block content %}
+
+</div>
+
+<div class="container" align="left">
+  <h2>最新消息</h2>
+</div>
+
+<table border="0" width="80%" height="80%" align="center">
+
+<tr>
+  <td rowspan="2" width="20%"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32912_1650888314_icon.jpg" width="90%"></td>
+  <td rowspan="1" width="30%"><a href="https://www.dcfever.com/news/readnews.php?id=32912"><h3>Transcend 新增 1TB「半截」SD，與 MacBook 更貼服<h3></a></td>
+  <td rowspan="3" width="30%" align="center"><img src="https://cdn01.dcfever.com/media/sharing/highlight/2022/04/20220425_1664141_square.jpg" width="60%"></td>
+</tr>
+<tr>
+  <td width="30%"><h8>以往因為 SD 卡外型太大，才衍生出 Micro SD 記憶卡，適合體積細小的相機、運動相機，以至是手機使用。而專門生產記憶體的 Transcend 就推出 JetDr<h8></td>
+</tr>
+
+<tr>
+  <td rowspan="2" width="20%"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32915_1650860775_icon.jpg" width="90%"></td>
+  <td rowspan="1" width="30%"><a href="https://www.dcfever.com/news/readnews.php?id=32915"><h3>【本地車訊】入門家庭車！BMW 2 系列 Active Tourer 抵港開賣<h3></a></td>
+</tr>
+<tr>
+  <td width="30%"><h8>如果預算不高，但又想感受德國車的特別操控，被喻為性價比極高的 BMW 2 系 Active Tourer 運動 SUV 可能是不俗的選擇！<h8></td>
+  <td width="30%" align="center"><h2>精選文章<h2></td>
+</tr>
+
+<tr>
+  <td rowspan="2" width="20%"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32898_1650851337_icon.jpg" width="90%"></td>
+  <td rowspan="1" width="30%"><a href="https://www.dcfever.com/news/readnews.php?id=32898"><h3>復古無反 Nikon zfc 減價高達 $1,150！用消費券再享額外優惠！<h3></a></td>
+  <td rowspan="2" width="30%" align="center"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32714_1650625065_icon.jpg" width="50%"><h5>Nikon 全片幅 Z6II/Z7II 韌體升級與 Z9 韌體 2.0 同步登場<h5></td>
+</tr>
+<tr>
+  <td width="30%"><h8>復古造型相機 Nikon Zfc 自推出以來都十分搶手，作為日常街拍相機或打卡相機都是一流。Nikon 早前推出的免費換皮服務，可為相機自選 6 種顏色蒙皮<h8></td>
+</tr>
+
+<tr>
+  <td rowspan="2" width="20%"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32914_1650856938_icon.jpg" width="90%"></td>
+  <td rowspan="1" width="30%"><a href="https://www.dcfever.com/news/readnews.php?id=32914"><h3>Hyundai 露營版 Statia 超吸引！電動頂篷、充氣床墊太方便<h3></a></td>
+  <td rowspan="2" width="30%" align="center"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32813_1650438686_icon.jpg" width="50%"><h5>【限時優惠】每月 $10 訂閱 Ivacy VPN 超低價購買 Youtube Premium<h5></td>
+</tr>
+<tr>
+  <td width="30%"><h8>早在上年年尾，韓國汽車大牌 Hyundai 就發表了極具科幻外型 MPV Staria，而貨車版在前陣子也於本港開賣！而近日，Hyundai 官方似乎有意將 Staria 車<h8></td>
+</tr>
+
+<tr>
+  <td rowspan="2" width="20%"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32913_1650856036_icon.jpg" width="90%"></td>
+  <td rowspan="1" width="30%"><a href="https://www.dcfever.com/news/readnews.php?id=32913"><h3>兒童側撞防護要改善！大改 Honda「HR-V」仍獲 4 星評價<h3></a></td>
+  <td rowspan="2" width="30%" align="center"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32211_1650424879_icon.jpg" width="50%"><h5>Tamron 18-300mm 輕便高性能 真。一鏡走天涯<h5></td>
+</tr>
+<tr>
+  <td width="30%"><h8>日前，「Euro NCAP」公布了 2022 年最新的新車安全測試結果，重點測試了歐版第四代的 Honda HR-V，並針對其後座進行「側撞」，是一項對兒童安全的測<h8></td>
+</tr>
+
+<tr>
+  <td rowspan="2" width="20%"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32910_1650816382_icon.jpg" width="90%"></td>
+  <td rowspan="1" width="30%"><a href="https://www.dcfever.com/news/readnews.php?id=32910"><h3>Samsung Galaxy M53 登場：一億像素手機性價比直迫小米<h3></a></td>
+  <td rowspan="2" width="30%" align="center"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32895_1650506542_icon.jpg" width="50%"><h5>四款 iPhone 14 手機曝光：全新機款或最受歡迎<h5></td>
+</tr>
+<tr>
+  <td width="30%"><h8>如果說 Samsung Galaxy A 系列好抵玩的話，那麼新公佈的 Galaxy M53 應該是 Samsung 最高性價比的手機，配備一億像素四鏡主相機的它，竟然賣大約 H<h8></td>
+</tr>
+
+<tr>
+  <td rowspan="2" width="20%"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32911_1650840752_icon.jpg" width="90%"></td>
+  <td rowspan="1" width="30%"><a href="https://www.dcfever.com/news/readnews.php?id=32911"><h3>平價超廣角變焦？Canon RF 15-28mm F4-5.6 專利曝光<h3></a></td>
+  <td rowspan="2" width="30%" align="center"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32885_1650383424_icon.jpg" width="50%"><h5>1More Piston Buds Pro 評測：有力問鼎最高性價比耳機迎<h5></td>
+</tr>
+<tr>
+  <td width="30%"><h8>Canon 現時已經有 RF 15-35mm F2.8L IS USM 及 RF 14-35mm F4L IS USM 兩支全片幅超廣角變焦鏡頭，不過兩鏡屬「紅圈」規格，未必很多使用 EOS R 系<h8></td>
+</tr>
+
+<tr>
+  <td rowspan="2" width="20%"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32909_1650813842_icon.jpg" width="90%"></td>
+  <td rowspan="1" width="30%"><a href="https://www.dcfever.com/news/readnews.php?id=32909"><h3>一星期的約會，盛放櫻花與春銀河合照<h3></a></td>
+  <td rowspan="2" width="30%" align="center"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32890_1650494251_icon.jpg" width="50%"><h5>頂級大瞳在望？傳 Canon RF 35mm F1.2L 今年第三季上市<h5></td>
+</tr>
+<tr>
+  <td width="30%"><h8>在日本，新一年的開始，以櫻花盛開打頭陣，同期上場的還有油菜花，稍後才輪到如鬱金香等其他花種。其實春未的夜空也同樣精彩，皆因最絢麗的銀河核心<h8></td>
+</tr>
+
+<tr>
+  <td rowspan="2" width="20%"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32908_1650803413_icon.jpg" width="90%"></td>
+  <td rowspan="1" width="30%"><a href="https://www.dcfever.com/news/readnews.php?id=32908"><h3>男神回到未紅時：時光機全景雕像<h3></a></td>
+  <td rowspan="2" width="30%" align="center"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32903_1650648883_icon.jpg" width="50%"><h5>Leica、Zeiss、Hasselblad 鏡頭手機色彩對決<h5></td>
+</tr>
+<tr>
+  <td width="30%"><h8>在《龍珠》世界裏，比達在悟空面前永達是千年老二，但論下一代，比達卻贏一仗，因為杜拉格斯不但變過超級撒亞人神，人氣仲比悟飯高出甚多，杜拉格斯<h8></td>
+</tr>
+
+<tr>
+  <td rowspan="2" width="20%"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32907_1650759366_icon.jpg" width="90%"></td>
+  <td rowspan="1" width="30%"><a href="https://www.dcfever.com/news/readnews.php?id=32907"><h3>傳 Sigma 明年加推 70-200mm F2.8 DG DN，令平價 F2.8 大三元鏡得以成軍<h3></a></td>
+  <td rowspan="2" width="30%" align="center"><img src="https://cdn01.dcfever.com/articles/news/2022/04/32905_1650673519_icon.jpg" width="50%"><h5>加入手動光圈環！Sony FE 24-70mm F2.8 GM II 諜照流出<h5></td>
+</tr>
+<tr>
+  <td width="30%"><h8>有指 Sigma 會快將公佈 16-28mm F2.8 DG DN|Contemporary 全片幅無反鏡頭，並已經有擬似規格流出，會為 Leica L-mount 及 Sony E-mount 用家提供平<h8></td>
+</tr>
+
+</table>
+
+
+
+
+
+      <div class="row" style="background:url('static/img/polaroid.png')">
+        <div class="col-md-7 col-md-offset-1 col-xs-offset-1">
+          <h2 class="featurette-heading">{{_("Super fast development ")}}<span class="text-muted">{{_(" Highly customizable")}}</span></h2>
+            <ul>
+          <li class="lead tight">{{_("Automatic menu generation.")}}</li>
+        <li class="lead tight">{{_("Automatic CRUD generation.")}}</li>
+        <li class="lead tight">{{_("Multiple actions on db records.")}}</li>
+        <li class="lead tight">{{_("Big variety of filters for your lists.")}}</li>
+        <li class="lead tight">{{_("Various view widgets: lists, master-detail, list of thumbnails etc")}}</li>
+        <li class="lead tight">{{_("Select2, Datepicker, DateTimePicker")}}</li>
+        <li class="lead tight">{{_("Google charts with automatic group by or direct values and filters.")}}</li>
+                </ul>
+        </div>
+        <div class="col-md-3 col-xs-3 col-md-offset-1 col-xs-offset-1">
+          <h1><i class="fa fa-bolt fa-5x"></i></h1>
+        </div>
+      </div>
+
+      <div class="row" style="background:url('static/img/fabric_1.png')">
+          <div class="col-md-3 col-md-offset-1 col-xs-offset-1 ">
+           <h1><i class="fa fa-lock fa-5x"></i></h1>
+          </div>
+          <div class="col-md-7 col-md-offset-1 col-xs-offset-1">
+            <h2 class="featurette-heading">{{_("Ready to go Security ")}}<span class="text-muted">{{_(" Fully granular")}}</span></h2>
+          <ul>
+            <li class="lead tight">{{_("Automatic permissions lookup, based on exposed methods.")}}</li>
+            <li class="lead tight">{{_("Inserts on the Database all the detailed permissions possible on your application.")}}</li>
+            <li class="lead tight">{{_("Public (no authentication needed) and Private permissions.")}}</li>
+            <li class="lead tight">{{_("Role based permissions.")}}</li>
+            <li class="lead tight">{{_("Authentication support for OpenID, Database and LDAP.")}}</li>
+            <li class="lead tight">{{_("Support for self user registration.")}}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row featurette" style="background:url('static/img/old_moon.png')">
+        <div class="col-md-7 col-md-offset-1 col-xs-offset-1">
+          <h2 class="featurette-heading">{{_("Form Generation ")}}<span class="text-muted">{{_(" With full control")}}</span></h2>
+        <ul>
+            <li class="lead tight">{{_("Automatic, Add, Edit and Show from Database Models.")}}</li>
+            <li class="lead tight">{{_("Labels and descriptions for each field.")}}</li>
+            <li class="lead tight">{{_("Automatic base validators from model's definition.")}}</li>
+            <li class="lead tight">{{_("Custom validators, extra fields, custom filters for related dropdown lists.")}}</li>
+            <li class="lead tight">{{_("Image and File support for upload and database field association")}}</li>
+            <li class="lead tight">{{_("Field sets for Form's (Django style).")}}</li>
+        </ul>
+        </div>
+        <div class="col-md-3 col-xs-3 col-md-offset-1 col-xs-offset-1">
+          <h1><i class="fa fa-list-alt fa-5x"></i></h1>
+        </div>
+      </div>
+
+       <div class="row" style="background:url('static/img/green_cup.png')">
+          <div class="col-md-3 col-md-offset-1 col-xs-offset-1">
+           <h1><i class="fa fa-cog fa-5x"></i></h1>
+          </div>
+          <div class="col-md-7 col-md-offset-1 col-xs-offset-1">
+            <h2 class="featurette-heading">{{_("Multi Language Support ")}}<span class="text-muted">{{_(" and more")}}</span></h2>
+          <ul>
+            <li class="lead tight">{{_("Framework translations and your app translations merge.")}}</li>
+            <li class="lead tight">{{_("Bootstrap.")}}</li>
+            <li class="lead tight">{{_("Font Awesome Icons.")}}</li>
+            <li class="lead tight">{{_("Select2, Date Picker.")}}</li>
+          </ul>
+        </div>
+      </div>
+
+{% endblock %}
+
+{% block footer %}
+	<div class="main_footer">
+		<div class="footer">
+			<div class="container">
+			  
+				<div class="row">
+				  <table border="0">
+
+      					<div class="col-xs-4 col-md-2">
+      						<div class="footer_column">
+      							<h3 class="header">新聞互動</h3>
+      							<ul>
+      								<li><a href="/news/index.php">新聞中心</a></li>
+      								<li><a href="/column/index.php">Fever 達人</a></li>
+      								<li><a href="/models/index.php">FeverModel</a></li>
+      								<li><a href="/photosharing/index.php">作品發表區</a></li>
+      								<li><a href="/forum/index.php">討論區</a></li>
+      							</ul>
+      						</div>
+      					</div>
+
+      					<div class="col-xs-4 col-md-2">
+      						<div class="footer_column">
+      							<h3 class="header">相機手機</h3>
+      							<ul>
+      								<li><a href="/cameras/database.php">相機資料館</a></li>
+      								<li><a href="/lens/index.php">鏡頭資料館</a></li>
+      								<li><a href="/phones/database.php">手機資料館</a></li>
+      								<li><a href="/tablets/database.php">平板資料館</a></li>
+      								<li><a href="/reviews/index.php">產品用家心得</a></li>
+      							</ul>
+      						</div>
+      					</div>
+
+      					<div class="col-xs-4 col-md-2">
+      						<div class="footer_column">
+      							<h3 class="header">二手買賣</h3>
+      							<ul>
+      								<li><a href="/trading/index.php">買賣區首頁</a></li>
+      								<li><a href="/trading/listing.php?category=1">攝影產品</a></li>
+      								<li><a href="/trading/listing.php?category=3">手機通訊</a></li>
+      								<li><a href="/trading/listing.php?category=2">電腦資訊</a></li>
+      								<li><a href="/trading/listing.php?category=44">影音家電</a></li>
+      								<li><a href="/trading/listing.php?category=45">手錶潮流</a></li>
+      								<li><a href="/trading/search.php">搜尋物品</a></li>
+      							</ul>
+      						</div>
+      					</div>
+
+      					<div class="clearfix visible_mobile"></div>
+      					<div class="col-xs-4 col-md-2">
+      						<div class="footer_column">
+      							<h3 class="header">環球旅遊</h3>
+      							<ul>
+      								<li><a href="/travel/hongkong.php"><div class="visible_desktop_inline">香港</div>攝影好去處</a></li>
+      								<li><a href="/travel/hotdeals.php">旅遊熱賣</a></li>
+      								<li><a href="/travel/destination.php">目的地攻略</a></li>
+      								<li><a href="/travel/photolist.php">旅遊作品</a></li>
+      								<li><a href="/travel/listing.php">達人旅遊分享</a></li>
+      							</ul>
+      						</div>
+      					</div>
+
+      					<div class="col-xs-4 col-md-2">
+      						<div class="footer_column">
+      							<h3 class="header">shop<span class="visible_desktop_inline"></span></h3>
+      							<ul>
+      								<li><a href="/shop/info.php?type=address">門市資料</a></li>
+      								<li><a href="/shop/list.php">最新貨品</a></li>
+      								<li><a href="/shop/list.php?cat=1">熱賣相機</a></li>
+      								<li><a href="/shop/list.php?cat=2">熱賣鏡頭</a></li>
+      								<li><a href="/shop/list.php?cat=73">熱賣 DSLR</a></li>
+      								<li><a href="/shop/list.php?cat=170">熱賣 EVIL</a></li>
+      							</ul>
+      						</div>
+      					</div>
+	
+      					<div class="col-xs-4 col-md-2">
+      						<div class="footer_column">
+      							<h3 class="header">DCFever</h3>
+      							<ul>
+      								<li><a href="/about/aboutus.php">關於我們</a></li>
+      								<li><a href="/about/contactusnow.php">聯絡我們</a></li>
+      								<li><a href="/about/advertising.php">廣告合作</a></li>
+      								<li><a href="/users/register.php">會員登記</a></li>
+      								<li><a href="/users/forgetpassword.php">忘記密碼</a></li>
+      								<li><a href="/about/agreement.php">使用條款</a></li>
+      								<li><a href="/about/privacy.php">私隱條例</a></li>
+      							</ul>
+      						</div>
+      					</div>
+
+				</div>
+
+					            <div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}

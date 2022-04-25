@@ -1,0 +1,37 @@
+<!-- extend base layout -->
+{% extends "index_base.html" %}
+
+{% block head_css %}
+        {{ super() }}
+        <link href="{{url_for('static',filename='css/custom.css')}}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h1>models</h1>
+
+    </div>
+</div>
+
+<div class="container" align="left">
+  <a href="https://www.dcfever.com/models/model.php"><h3>Model </h3></a>
+</div>
+
+<table border="0" align="center" width="70%" height="80%">
+<tr>
+  <td align="center"><a href="https://www.dcfever.com/models/info.php?id=3307"><img src="https://cdn03.dcfever.com/media/models/3307/avatar_3307_1645124985.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/models/info.php?id=3303"><img src="https://cdn03.dcfever.com/media/models/3303/avatar_3303_1643154417.jpg"></a></td>
+  <td align="center"><a href="https://www.dcfever.com/models/info.php?id=2903"><img src="https://cdn03.dcfever.com/media/models/2903/6206091423251585_icon.jpg"></a></td>
+  
+</tr>
+<tr>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/models/info.php?id=3307">Yoyochan</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/models/info.php?id=3303">鄧玥袇</a></td>
+  <td rowspan="2" align="center"><a href="https://www.dcfever.com/models/info.php?id=2903">jody Tsang</a></td>
+ 
+</tr>
+</table>
+
+
+{% endblock %}
